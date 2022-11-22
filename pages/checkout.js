@@ -1,8 +1,8 @@
 import React from "react";
-import Checkout from "../components/Checkout/Checkout";
+import CheckOut from "../components/CheckOut/CheckOut";
 
 function checkout() {
-    return <Checkout />;
+    return <CheckOut />;
 }
 
 export default checkout;

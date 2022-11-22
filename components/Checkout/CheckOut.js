@@ -7,7 +7,7 @@ import { Store } from "../../utils/Store";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-function Checkout() {
+function CheckOut() {
     /* Using useForm() For Overall Form Handling and  validation*/
     const {
         handleSubmit,
@@ -201,4 +201,4 @@ function Checkout() {
     );
 }
 
-export default Checkout;
+export default CheckOut;
