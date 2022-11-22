@@ -1,0 +1,32 @@
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #efefef;
+    font-family: "Playfair Display", serif;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 1230px) {
+    .container {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media only screen and (max-width: 937px) {
+    .container {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 622px) {
+    .container {
+        grid-template-columns: auto;
+    }
+}
+
+.product{
+    text-align: center;
+    padding: 30px;
+}

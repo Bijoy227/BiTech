@@ -1,16 +1,13 @@
-import Hero from "../components/Hero/Hero";
-import ProductList from "../components/Product/ProductList";
-import db from "../utils/db";
-import Product from "../models/Product";
+import React from "react";
+import ProductList from "../../components/Product/ProductList";
+import db from "../../utils/db";
+import Product from "../../models/Product";
 
-export default function Home({ products }) {
-    return (
-        <div>
-            <Hero />
-            <ProductList products={products} />
-        </div>
-    );
+function index({ products }) {
+    return <ProductList products={products} />;
 }
+
+export default index;
 
 /* Using getStaticProps() for Rendering data ahead User's Request */
 export async function getStaticProps() {

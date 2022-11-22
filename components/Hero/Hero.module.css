@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+
+.slogan {
+    width: 100%;
+    height: calc(100vh - 80px);
+    text-align: center;
+    color: white;
+    background: url("/images/hero4.jpg") no-repeat;
+}
+.pure1 {
+    margin: 0;
+    padding-top: 12%;
+    font-size: 600%;
+    font-family: "Oswald", sans-serif;
+}
+
+.pure2 {
+    font-size: 200%;
+    margin-bottom: 15px;
+}
+
+.btn {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #fa6400;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #fb8332;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn:active {
+    background-color: #c85000;
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+/* For Responsive */
+
+@media (max-width: 1191px) {
+    .slogan {
+        height: 500px;
+    }
+}
+
+@media (max-width: 991px) {
+    .slogan {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slogan {
+        height: 300px;
+    }
+}
+@media (max-width: 565px) {
+    .slogan {
+        height: 400px;
+    }
+}

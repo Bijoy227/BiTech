@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+.card {
+    background-color: #fff;
+    width: 300px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.imgContainer {
+    width: 100%;
+    height: 300px;
+    border: 1px dashed #ccc;
+    overflow: hidden;
+    position: relative;
+}
+
+.imgContainer img {
+    width: 100%;
+}
+
+.card .imgContainer img:nth-child(2) {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s all;
+}
+
+.card .imgContainer:hover img:nth-child(2) {
+    opacity: 1;
+    top: 0;
+}
+
+.infoBox .title {
+    font-weight: 500;
+    color: #444;
+    font-size: 20px;
+}
+
+.infoBox .price {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.buttonGroup button {
+    border: 0;
+    outline: 0;
+    color: #fff;
+    padding: 7px 15px;
+    cursor: pointer;
+}
+
+.buttonGroup button.buy {
+    background-color: #ff9f00;
+}
+
+.buttonGroup button.addToCart {
+    background-color: #fb651b;
+}
